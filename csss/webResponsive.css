@@ -201,19 +201,10 @@ discover{
          box-shadow:  var(--box-shadow);
     }
 }
-.Home {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color:var(--secondary-color) ;
+a {
     color: var(--box-shadow);
-    padding: 10px 15px;
-    border-radius: 5px;
     text-decoration: none;
-    font-size: 14px;
-
 }
-.Home:hover {
-    background-color:var(--primary-color);
-    color: var(--secondary-color);
+  a:hover {
+    color: var(--text-color-normal);
 }
