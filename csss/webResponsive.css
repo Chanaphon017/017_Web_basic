@@ -201,7 +201,7 @@ discover{
          box-shadow:  var(--box-shadow);
     }
 }
-.back-home {
+.Home {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -213,7 +213,7 @@ discover{
     font-size: 14px;
 
 }
-.back-home:hover {
+.Home:hover {
     background-color:var(--primary-color);
     color: var(--secondary-color);
 }
