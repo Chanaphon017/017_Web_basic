@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+}
+
+/* Navbar */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    padding: 10px 20px;
+}
+.nav-logo { 
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+.hero-section img {
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+    opacity: 0.8;  /* ลดความชัดเจนของภาพ */
+    filter: brightness(0.6);  /* ลดความสว่างของภาพ */
+}
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-content button {
+    background-color: rgba(255, 255, 255, 0.2);  /* พื้นหลังโปร่งใสขาว */
+    color: rgb(183, 183, 183);
+    padding: 12px 24px;
+    border: 2px solid rgba(255, 255, 255, 0.5);  /* ขอบโปร่งใส */
+    border-radius: 30px;  /* ขอบโค้งมน */
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.hero-content button:hover {
+    background-color: rgba(93, 93, 93, 0.5);
+    border-color: rgba(255, 255, 255, 1);
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+/* Content Section */
+.content-section {
+    padding: 20px;
+    background-color: #1a1a1a;
+    text-align: center;
+}
+.content-grid {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-item {
+    background: #222;
+    padding: 20px;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+.content-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Profile Image */
+.profile-img {
+    max-width: 150px;
+}
+
+/* Footer */
+.footer-text {
+    color: rgb(162, 163, 163);
+}
+
+/* Links */
+a {
+    color: rgb(193, 193, 193);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    font-weight: 400;    
+}
+
+/* Hamburger Icon (สำหรับมือถือ) */
+.hamburger-icon {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 760px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+    .hero-section img {
+        height: 300px; /* ปรับให้สั้นลงในโหมดมือถือ */
+    }
+    .hero-content {
+        width: 80%;
+        font-size: 14px;
+    }
+    .hero-content button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .content-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
