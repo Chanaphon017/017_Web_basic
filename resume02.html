@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  
+  <style>
+  body {
+      background-color: #4d4d4d;
+      font-family: 'Arial', sans-serif;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .resume-container {
+      width: 80%;
+      background: #2e2e2e;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .profile-img {
+      width: 100%;
+      border-radius: 15px;
+      border: 5px solid #a8a8a8;
+    }
+    .section-title {
+      font-weight: bold;
+      border-bottom: 3px solid #979797;
+      padding-bottom: 5px;
+      margin-top: 20px;
+      color: #ffffff;
+    }
+    .sidebar {
+      background-color: #3d3d3d;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(134, 134, 134, 0.3);
+    }
+    a {
+        text-decoration:none;
+        color: rgb(255, 255, 255);
+   }
+   a:hover {
+        color: rgb(118, 118, 118);
+        font-weight: 500px;
+    }
+    .btn-custom {
+      background-color: #c10b0b;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+    .btn-custom:hover {
+      background-color: #6c0000;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container resume-container">
+    <div class="row">
+        <!-- ซ้าย -->
+        <div class="col-md-4 sidebar text-white">
+            <h2 class="text-uppercase text-center">Resume</h2>
+            <h4 class="section-title">ประวัติส่วนตัว</h4>
+            <p><strong>ชื่อ:</strong> ชนพล</p>
+            <p><strong>อายุ:</strong> 20 ปี</p>
+            <p><strong>สัญชาติ:</strong> ไทย</p>
+            
+            <h4 class="section-title">ข้อมูลติดต่อ</h4>
+            <p><i class="fa-solid fa-phone"></i> โทร: 099-757-2683</p>
+            <p><i class="fa-solid fa-envelope"></i> อีเมล: aex2612@gmaik.com</p>
+            <p><i class="fa-solid fa-map-marker-alt"></i> ที่อยู่: นครปฐม, ไทย</p>
+            
+            <h4 class="section-title">ความสามารถ</h4>
+            <ul>
+                <li>ออกแบบ UX/UI</li>
+                <li>เขียน HTML</li>
+                <li>แก้ไข CSS</li>
+            </ul>
+
+            <h4 class="section-title">ความสนใจ</h4>
+            <ul>
+                <li>ออกแบบ UX/UI</li>
+                <li>เขียน HTML</li>
+                <li>แก้ไข CSS</li>
+            </ul>
+        </div>
+        
+        <!-- ขวา -->
+        <div class="col-md-8 p-4">
+            <img src="/images/468321937_8738917099529301_1173941860780789521_n.jpg" class="profile-img mb-3" alt="Profile">
+            <h2 class="text-uppercase">Chanaphon Phetnoi</h2>
+            <p>"สวัสดีครับ ผมชื่อนายชนพล เพ็ชรน้อย เป็นนักศึกษาอยู่ที่มหาวิทยาลัยราชภัฏนครปฐม คณะวิทยาศาสตร์และเทคโนโลยี สาขาเทคโนโลยีสารสนเทศ ชั้นปีที่ 2"</p>
+            
+            <h4 class="section-title">ประวัติการศึกษา</h4>
+            <ul>
+                <li><strong>มัธยมศึกษาตอนต้น:</strong><a href="">โรงเรียนวัดบางปลา(เมธีจุฬารักษ์)</a> </li>
+                <li><strong>ระดับปวช:</strong><a href="">วิทยาลัยการอาชีพบางแก้วฟ้า(หลวงพ่อเปิ่นอุปถัมภ์)</a> </li>
+                <li><strong>มหาวิทยาลัย:</strong><a href="https://www.npru.ac.th/index.php"> มหาวิทยาลัยราชภัฏนครปฐม</a></li>
+            </ul>
+            <br>
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-custom shadow" onclick="window.location.href='Resume_01.html'"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
